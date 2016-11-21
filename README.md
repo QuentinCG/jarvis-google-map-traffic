@@ -10,13 +10,10 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
-Description of your Plugin
+Get Traffic from Google Map Directions API  
 
 ## Usage
-```
-You: example of how to trigger the command
-Jarvis: output from Jarvis
-```
+Command : "TRAFFIC"
 
 ## Author
-[your name](http://your.website)
+[Nicolas Lefèvre](http://nicolas-lefevre.fr)
