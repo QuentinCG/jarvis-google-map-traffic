@@ -10,7 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
-Get Traffic from Google Map Directions API  
+Get best route with Traffic from Google Map Directions API  
 
 ## Usage
 Command
