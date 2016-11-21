@@ -1,1 +1,1 @@
-*TRAFFIC*==say "Calcul du traffic en cours" && say "$(jv_pg_gm_check_traffic)"
+*TRAFIC*==say "Calcul du traffic en cours" && say "$(jv_pg_gm_check_traffic)"
