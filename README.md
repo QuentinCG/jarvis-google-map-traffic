@@ -13,7 +13,9 @@ For multi-language plugin:
 Get Traffic from Google Map Directions API  
 
 ## Usage
-Command : "TRAFFIC"
+Command
+en : "TRAFFIC"
+fr : "TRAFIC"
 
 ## Author
 [Nicolas Lefèvre](http://nicolas-lefevre.fr)
