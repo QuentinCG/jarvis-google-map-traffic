@@ -6,6 +6,13 @@
 # jv for JarVis
 # pg for PluGin
 # XX can be a two letters code for your plugin, ex: ww for Weather Wunderground
-jv_pg_wz_check_traffic() {
-curl -s "https://www.waze.com/row-RoutingManager/routingRequest?from=x%3A1.825706+y%3A48.622601&to=x%3A2.374377+y%3A48.844516&at=0&returnJSON=true&returnGeometries=true&returnInstructions=true&timeout=60000&nPaths=3&clientVersion=4.0.0&options=AVOID_TRAILS%3At%2CALLOW_UTURNS%3At";
+jv_pg_gm_check_traffic() {
+local json=$(curl -s "https://maps.googleapis.com/maps/api/directions/json?language=en&origin=$FROM&destination=$TO&traffic_model=best_guess&departure_time=now&key=$APIKEY")
+local duration=$(echo "$json" | jq -r '.routes[0].legs[0].duration.value')
+local duration_in_traffic=$(echo "$json" | jq -r '.routes[0].legs[0].duration_in_traffic.value')
+local duration_in_traffic_text=$(echo "$json" | jq -r '.routes[0].legs[0].duration_in_traffic.text')
+local summary=$(echo "$json" | jq -r '.routes[0].summary')
+local difference=$((($duration_in_traffic-$duration)/60))
+echo "The best estimated route via $summary is $duration_in_traffic_text including $difference minutes late"
 }
+
