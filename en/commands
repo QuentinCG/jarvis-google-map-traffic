@@ -1,1 +1,1 @@
-*TRAFFIC*==say "Traffic calculation in progress" && say "$(jv_pg_gm_check_traffic)"
+*TRAFFIC*==say "Traffic calculation in progress" && FROM=(1) && TO=(2) && say "$(jv_pg_gm_check_traffic)"
