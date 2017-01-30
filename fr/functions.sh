@@ -13,6 +13,5 @@ local duration_in_traffic=$(echo "$json" | jq -r '.routes[0].legs[0].duration_in
 local duration_in_traffic_text=$(echo "$json" | jq -r '.routes[0].legs[0].duration_in_traffic.text')
 local summary=$(echo "$json" | jq -r '.routes[0].summary')
 local difference=$((($duration_in_traffic-$duration)/60))
-echo "Le meilleur trajet via $summary est estimé à $duration_in_traffic_text dont $difference minutes de retard"
+echo "Le meilleur trajet $FROM-$TO via $summary est estimé à $duration_in_traffic_text dont $difference minutes de retard"
 }
-
