@@ -1,1 +1,2 @@
-*TRAFIC*==say "Calcul du trafic en cours entre (1) et (2)" && FROM=(1) && TO=(2) && say "$(jv_pg_gm_check_traffic)"
+*TRAFIC ENTRE (*) ET (*)==say "Calcul du trafic entre (1) and (2) en cours" && FROM=(1) && TO=(2) && say "$(jv_pg_gm_check_traffic)"
+*TRAFIC*==say "Calcul du trafic en cours" && say "$(jv_pg_gm_check_traffic)"
