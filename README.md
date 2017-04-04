@@ -13,9 +13,13 @@ For multi-language plugin:
 Get best route with Traffic from Google Map Directions API  
 
 ## Usage
-Command
-en : "TRAFFIC"
-fr : "TRAFIC"
+Command `en`
+* "TRAFFIC" -> Get default traffic
+* "TRAFFIC between CITY1 and CITY2" -> Get default between CITY1 and CITY2
+
+Command `fr`
+* "TRAFIC" -> Trafic par défaut
+* "TRAFIC entre VILLE1 et VILLE2" -> Trafic entre VILLE1 et VILLE2
 
 ## Author
 [Nicolas Lefèvre](http://nicolas-lefevre.fr)
