@@ -1,2 +1,2 @@
-*TRAFFIC BETWEEN (*) AND (*)==jv_pg_gm_check_traffic "(1)" "(2)"
-*TRAFFIC*==jv_pg_gm_check_traffic "$var_jv_pg_gm_from" "$var_jv_pg_gm_to"
+*TRAFFIC BETWEEN (*) AND (*)==jv_pg_gm_check_traffic "(1)" "(2)" "en"
+*TRAFFIC*==jv_pg_gm_check_traffic "$var_jv_pg_gm_from" "$var_jv_pg_gm_to" "en"
