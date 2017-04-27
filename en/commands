@@ -1,2 +1,2 @@
-*TRAFFIC BETWEEN (*) AND (*)==say "Traffic calculation in progress between (1) and (2)" && FROM=(1) && TO=(2) && say "$(jv_pg_gm_check_traffic)"
-*TRAFFIC*==say "Traffic calculation in progress" && say "$(jv_pg_gm_check_traffic)"
+*TRAFFIC BETWEEN (*) AND (*)==jv_pg_gm_check_traffic "(1)" "(2)"
+*TRAFFIC*==jv_pg_gm_check_traffic "$var_jv_pg_gm_from" "$var_jv_pg_gm_to"
