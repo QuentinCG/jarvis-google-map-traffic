@@ -6,12 +6,25 @@ Get time, delay and major direction to go to a specific place in car with <a tar
 
 ## Usage
 
+French:
+
 ```
 You: Donne le trafic (du trajet habituel)
 Jarvis: Le trajet entre NICE et PARIS via A7 et A6 est estimé à 8 heures 37 minutes dont 4 minutes de retard.
 
 You: Donne le trafic entre Grenoble et Paris
-Jarvis:  Le trajet entre Grenoble et Paris via A6 est estimé à 5 heures 36 minutes dont 20 minutes de retard.
+Jarvis: Le trajet entre Grenoble et Paris via A6 est estimé à 5 heures 36 minutes dont 20 minutes de retard.
+```
+
+
+English:
+
+```
+You: Give traffic (of usual traject)
+Jarvis: The route from NICE to PARIS via A7 and A6 is 8 hours 37 minutes including 4 minutes late.
+
+You: Give traject between Grenoble and Paris
+Jarvis: The route from Grenoble to Paris via A6 is 5 hours 36 minutes including 20 minutes late.
 ```
 
 
