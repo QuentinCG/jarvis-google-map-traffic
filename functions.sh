@@ -13,7 +13,7 @@ jv_pg_gm_check_traffic()
     local summary=$(echo "$json" | jq -r '.routes[0].summary')
     local delay=$((($duration_in_traffic-$duration)/60))
 
-    say "$(jv_pg_gm_lang say_traffic \"$1\" \"$2\" \"$summary\" \"$duration_in_traffic_text\" \"$delay\")"
+    say "$(jv_pg_gm_lang say_traffic "$1" "$2" "$summary" "$duration_in_traffic_text" "$delay")"
   else
     say "$(jv_pg_gm_lang invalid_api_key)"
   fi
